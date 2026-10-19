@@ -1,10 +1,365 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>My First Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>The History of HTTP | Canopy</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>Hello, World!</h1>
-    <p>This is my first website.</p>
-</body>
-</html>
+
+    <!-- HEADER -->
+    <header>
+        <h1>The History of HTTP</h1>
+        <p>Understanding the technology behind the World Wide Web</p>
+
+        <nav>
+            <a href="#overview">Overview</a>
+            <a href="#history">History</a>
+            <a href="#versions">HTTP Versions</a>
+            <a href="#requests">Requests</a>
+            <a href="#responses">Responses</a>
+            <a href="#everyday">Everyday Use</a>
+            <a href="#references">References</a>
+        </nav>
+    </header>
+
+
+    <!-- MAIN CONTENT -->
+    <main>
+
+        <!-- OVERVIEW -->
+        <section id="overview">
+
+            <h2>What Is HTTP?</h2>
+
+            <p>
+                HTTP stands for HyperText Transfer Protocol. It is a set
+                of rules that allows a web browser and a web server to
+                communicate with each other.
+            </p>
+
+            <p>
+                When someone visits a website, the browser sends a request
+                to a server for the information it needs. The server then
+                sends that information back to the browser. This can
+                include text, images, videos, and other parts of a webpage.
+            </p>
+
+            <p>
+                HTTP is one of the fundamental technologies that makes
+                the World Wide Web work.
+            </p>
+
+            <!-- ILLUSTRATION -->
+            <div class="illustration">
+
+                <svg viewBox="0 0 600 230"
+                     role="img"
+                     aria-label="A web browser communicates with a web server through HTTP requests and responses">
+
+                    <rect x="25" y="35" width="190" height="150"
+                          rx="10" fill="#e8eef3" stroke="#34495e"
+                          stroke-width="2"/>
+
+                    <rect x="25" y="35" width="190" height="35"
+                          rx="10" fill="#34495e"/>
+
+                    <text x="120" y="57" text-anchor="middle"
+                          fill="white" font-size="16">
+                        Web Browser
+                    </text>
+
+                    <rect x="50" y="90" width="140" height="65"
+                          rx="5" fill="white" stroke="#7f8c8d"/>
+
+                    <line x1="65" y1="110" x2="175" y2="110"
+                          stroke="#7f8c8d" stroke-width="3"/>
+
+                    <line x1="65" y1="125" x2="155" y2="125"
+                          stroke="#7f8c8d" stroke-width="3"/>
+
+                    <line x1="65" y1="140" x2="135" y2="140"
+                          stroke="#7f8c8d" stroke-width="3"/>
+
+
+                    <rect x="385" y="35" width="190" height="150"
+                          rx="10" fill="#e8eef3" stroke="#34495e"
+                          stroke-width="2"/>
+
+                    <rect x="385" y="35" width="190" height="35"
+                          rx="10" fill="#34495e"/>
+
+                    <text x="480" y="57" text-anchor="middle"
+                          fill="white" font-size="16">
+                        Web Server
+                    </text>
+
+                    <rect x="420" y="85" width="120" height="20"
+                          rx="3" fill="#95a5a6"/>
+
+                    <rect x="420" y="115" width="120" height="20"
+                          rx="3" fill="#95a5a6"/>
+
+                    <rect x="420" y="145" width="120" height="20"
+                          rx="3" fill="#95a5a6"/>
+
+
+                    <path d="M225 95 H365"
+                          stroke="#2874a6" stroke-width="3"
+                          fill="none"/>
+
+                    <path d="M350 85 L365 95 L350 105"
+                          stroke="#2874a6" stroke-width="3"
+                          fill="none"/>
+
+                    <text x="295" y="82" text-anchor="middle"
+                          font-size="14" fill="#2874a6">
+                        HTTP Request
+                    </text>
+
+
+                    <path d="M365 145 H225"
+                          stroke="#218c74" stroke-width="3"
+                          fill="none"/>
+
+                    <path d="M240 135 L225 145 L240 155"
+                          stroke="#218c74" stroke-width="3"
+                          fill="none"/>
+
+                    <text x="295" y="170" text-anchor="middle"
+                          font-size="14" fill="#218c74">
+                        HTTP Response
+                    </text>
+
+                </svg>
+
+                <p class="caption">
+                    Figure 1. HTTP allows browsers and servers to
+                    exchange requests and responses.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- HISTORY -->
+        <section id="history">
+
+            <h2>Why Was HTTP Created?</h2>
+
+            <p>
+                HTTP was created as part of the development of the World
+                Wide Web at CERN. During the late 1980s, researchers had
+                to work with information stored on different computers
+                and systems, making information sharing more difficult.
+            </p>
+
+            <p>
+                Tim Berners-Lee wanted to create a simpler way for
+                researchers to access and share information between
+                different computers. This idea eventually became the
+                foundation for the World Wide Web and its communication
+                technologies.
+            </p>
+
+            <h3>How Did HTTP Develop?</h3>
+
+            <p>
+                Tim Berners-Lee began developing the World Wide Web at
+                CERN between 1989 and 1991. The earliest version of HTTP
+                was simple and mainly used to transfer HTML documents.
+            </p>
+
+            <p>
+                As the World Wide Web became more popular, HTTP had to
+                evolve to support additional types of information and
+                more complicated communication between computers.
+            </p>
+
+            <p>
+                CERN released the World Wide Web software into the public
+                domain in 1993, helping make the technology available
+                for people around the world to use and develop.
+            </p>
+
+            <div class="timeline">
+
+                <div class="timeline-item">
+                    <span class="year">1989</span>
+                    <h3>The Web Begins</h3>
+                    <p>
+                        Tim Berners-Lee proposed the World Wide Web at CERN.
+                    </p>
+                </div>
+
+                <div class="timeline-item">
+                    <span class="year">1991</span>
+                    <h3>HTTP/0.9</h3>
+                    <p>
+                        The earliest version of HTTP provided a simple
+                        way to retrieve HTML documents.
+                    </p>
+                </div>
+
+                <div class="timeline-item">
+                    <span class="year">1996</span>
+                    <h3>HTTP/1.0</h3>
+                    <p>
+                        Headers, status codes, and multimedia support
+                        expanded HTTP's capabilities.
+                    </p>
+                </div>
+
+                <div class="timeline-item">
+                    <span class="year">1997</span>
+                    <h3>HTTP/1.1</h3>
+                    <p>
+                        Persistent connections and caching helped improve
+                        web browsing.
+                    </p>
+                </div>
+
+                <div class="timeline-item">
+                    <span class="year">2015</span>
+                    <h3>HTTP/2</h3>
+                    <p>
+                        Multiplexing allowed multiple streams of data
+                        to travel over one connection.
+                    </p>
+                </div>
+
+                <div class="timeline-item">
+                    <span class="year">2022</span>
+                    <h3>HTTP/3</h3>
+                    <p>
+                        HTTP/3 was standardized using QUIC to improve
+                        communication efficiency.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- HTTP METHODS -->
+        <section id="methods">
+
+            <h2>Common HTTP Methods</h2>
+
+            <p>
+                HTTP methods tell a server what action a client wants
+                to perform.
+            </p>
+
+            <div class="card-container">
+
+                <article class="card">
+                    <h3>GET</h3>
+                    <p>
+                        Retrieves information from a server, such as
+                        a webpage or image.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>POST</h3>
+                    <p>
+                        Sends information to a server, often to create
+                        a new resource or submit a form.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>PUT</h3>
+                    <p>
+                        Replaces or updates an existing resource.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>DELETE</h3>
+                    <p>
+                        Requests the removal of a resource.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>HEAD</h3>
+                    <p>
+                        Requests response headers without retrieving
+                        the response body.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>PATCH</h3>
+                    <p>
+                        Requests a partial update to an existing resource.
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- HTTP VERSIONS -->
+        <section id="versions">
+
+            <h2>The Evolution of HTTP</h2>
+
+            <p>
+                HTTP has undergone major upgrades to keep up with
+                changing technology and increasingly complex websites.
+                Each version introduced improvements to communication
+                between browsers and servers.
+            </p>
+
+
+            <article class="version">
+
+                <h3>HTTP/0.9: The Beginning</h3>
+
+                <p>
+                    Introduced in 1991, HTTP/0.9 was known as the
+                    "one-line protocol." A browser could send a simple
+                    GET request containing a file path.
+                </p>
+
+                <p>
+                    This version did not include headers, metadata,
+                    or status codes. It could transfer plain-text
+                    HTML documents, and the connection closed when
+                    the transfer finished.
+                </p>
+
+                <div class="code-example">
+                    GET /index.html
+                </div>
+
+            </article>
+
+
+            <article class="version">
+
+                <h3>HTTP/1.0: More Information</h3>
+
+                <p>
+                    HTTP/1.0 arrived in 1996. It introduced headers,
+                    status codes, and support for different types
+                    of content.
+                </p>
+
+                <p>
+                    These improvements gave browsers and servers
+                    more information about requests and responses.
+                </p>
+
+            </
