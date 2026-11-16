@@ -1,90 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>History of HTTP</title>
+    <title>The History of HTTP | History</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header>
-    <h1>History of HTTP</h1>
+    <h1>The Evolution of HTTP</h1>
+    <p>How the protocol changed as the Web grew</p>
+
     <nav>
         <a href="index.html">Home</a>
         <a href="history.html">History</a>
-        <a href="versions.html">Versions</a>
         <a href="concepts.html">Key Concepts</a>
-        <a href="about.html">About</a>
+        <a href="requests.html">Requests & Responses</a>
+        <a href="everyday.html">Everyday Use</a>
         <a href="references.html">References</a>
+        <a href="quiz.html">Quiz</a>
     </nav>
 </header>
 
 <main>
 
-<section class="card">
-    <h2>The Beginning of HTTP</h2>
+    <section class="card">
+        <h2>How HTTP Has Changed</h2>
 
-    <p>
-        HTTP was created by Tim Berners-Lee in the early 1990s.
-        It was developed to help computers share information
-        through the World Wide Web.
-    </p>
-</section>
+        <p>
+            The protocol has gone through major upgrades over the last
+            few decades to keep up with modern technology. As websites
+            became more complex, newer versions of HTTP were developed
+            to make communication between browsers and servers more
+            efficient.
+        </p>
 
-<section class="card">
-    <h2>HTTP Timeline</h2>
+        <p>
+            HTTP/2 improved how multiple requests could be sent over
+            the same connection, allowing webpages to load more
+            efficiently. HTTP/3 introduced QUIC, a newer transport
+            protocol that uses UDP instead of TCP. QUIC is designed
+            to reduce delays and handle multiple streams of information
+            more efficiently.
+        </p>
+    </section>
 
-    <div class="timeline">
+    <section class="card">
+        <h2>HTTP Timeline</h2>
 
-        <div class="timeline-item">
-            <h3>1991 – HTTP/0.9</h3>
-            <p>
-                The first version of HTTP was very simple.
-                It mainly supported requests for HTML documents.
-            </p>
+        <div class="timeline">
+
+            <div class="timeline-item">
+                <span class="year">1989</span>
+                <h3>The Web Begins</h3>
+                <p>
+                    Tim Berners-Lee proposed the World Wide Web while
+                    working at CERN.
+                </p>
+            </div>
+
+            <div class="timeline-item">
+                <span class="year">1991</span>
+                <h3>HTTP/0.9</h3>
+                <p>
+                    The earliest version of HTTP provided a simple
+                    way to retrieve HTML documents.
+                </p>
+            </div>
+
+            <div class="timeline-item">
+                <span class="year">1996</span>
+                <h3>HTTP/1.0</h3>
+                <p>
+                    HTTP/1.0 was documented in 1996 and introduced
+                    headers, status codes, and support for different
+                    types of content.
+                </p>
+            </div>
+
+            <div class="timeline-item">
+                <span class="year">1997</span>
+                <h3>HTTP/1.1</h3>
+                <p>
+                    HTTP/1.1 introduced persistent connections and
+                    improvements to caching and communication.
+                </p>
+            </div>
+
+            <div class="timeline-item">
+                <span class="year">2015</span>
+                <h3>HTTP/2</h3>
+                <p>
+                    HTTP/2 was standardized in 2015. Multiplexing
+                    allowed multiple streams of information to travel
+                    over one connection.
+                </p>
+            </div>
+
+            <div class="timeline-item">
+                <span class="year">2022</span>
+                <h3>HTTP/3</h3>
+                <p>
+                    HTTP/3 was standardized in 2022 and uses QUIC
+                    to improve communication efficiency.
+                </p>
+            </div>
+
         </div>
+    </section>
 
-        <div class="timeline-item">
-            <h3>1996 – HTTP/1.0</h3>
-            <p>
-                HTTP/1.0 introduced headers, status codes,
-                and support for different types of content.
-            </p>
+    <section class="card">
+        <h2>HTTP/0.9: The Early Version</h2>
+
+        <p>
+            The earliest version of the protocol, introduced in the
+            early Web, was later named HTTP/0.9. It was famously called
+            the "one-line protocol" because it was incredibly simple
+            compared to what we use today.
+        </p>
+
+        <p>
+            A browser could only send a single line of text consisting
+            of the word GET and the file path. There were no headers,
+            metadata, or status codes. The protocol mainly transferred
+            HTML documents and closed the network connection when
+            the transfer was finished.
+        </p>
+
+        <div class="code-example">
+            GET /index.html
         </div>
+    </section>
 
-        <div class="timeline-item">
-            <h3>1997 – HTTP/1.1</h3>
-            <p>
-                HTTP/1.1 improved communication by allowing
-                persistent connections and better caching.
-            </p>
-        </div>
+    <section class="card">
+        <h2>HTTP/1.0: The First Major Upgrade</h2>
 
-        <div class="timeline-item">
-            <h3>2015 – HTTP/2</h3>
-            <p>
-                HTTP/2 improved website performance by allowing
-                multiple requests to be handled at the same time.
-            </p>
-        </div>
+        <p>
+            HTTP/1.0 arrived in the mid-1990s. It added headers,
+            status codes, and support for different types of content.
+            These improvements gave browsers and servers more
+            information about requests and responses.
+        </p>
 
-        <div class="timeline-item">
-            <h3>2022 – HTTP/3</h3>
-            <p>
-                HTTP/3 introduced QUIC, which helps make
-                connections faster and more reliable.
-            </p>
-        </div>
+        <p>
+            Unlike HTTP/0.9, HTTP/1.0 could transfer more than
+            just HTML documents. It made communication more flexible
+            and helped support the growing number of websites.
+        </p>
+    </section>
 
-    </div>
-</section>
+    <section class="card">
+        <h2>HTTP/1.1: Persistent Connections</h2>
+
+        <p>
+            When HTTP/1.1 became the web standard, one of its biggest
+            improvements was persistent connections. In older versions,
+            a browser generally had to open and close a new connection
+            for each resource on a webpage, which could cause delays.
+        </p>
+
+        <p>
+            HTTP/1.1 allowed a single connection to stay open so
+            multiple files could be requested over it. It also
+            introduced improved caching controls, allowing browsers
+            to reuse files they had already downloaded instead of
+            repeatedly requesting the same resources.
+        </p>
+    </section>
+
+    <section class="card">
+        <h2>HTTP/2: Multiplexing</h2>
+
+        <p>
+            As websites evolved into complex applications, HTTP/1.1
+            could create bottlenecks because requests often had to
+            wait for earlier responses on a connection.
+        </p>
+
+        <p>
+            HTTP/2 addressed this by introducing multiplexing.
+            This feature allows multiple streams of information to
+            travel at the same time over one connection.
+        </p>
+
+        <p>
+            HTTP/2 also uses a binary format and compresses headers
+            to reduce repeated information. It originally included
+            a feature called Server Push, although this feature is
+            now deprecated in modern browser implementations.
+        </p>
+    </section>
+
+    <section class="card">
+        <h2>HTTP/3: QUIC</h2>
+
+        <p>
+            Even with the improvements of HTTP/2, communication
+            over TCP could still experience delays when packets
+            were lost. This can cause head-of-line blocking at
+            the transport layer.
+        </p>
+
+        <p>
+            HTTP/3 uses a newer transport protocol called QUIC.
+            QUIC runs over UDP and supports independent streams.
+            This means that a lost packet in one stream does not
+            necessarily stop all other streams from continuing.
+        </p>
+
+        <p>
+            QUIC also supports faster connection setup and is
+            designed to handle changing network conditions,
+            including when mobile devices switch between networks.
+        </p>
+    </section>
+
+    <section class="card">
+        <h2>Watch and Learn</h2>
+
+        <p>
+            Use the following resources to learn more about the
+            history and development of HTTP.
+        </p>
+
+        <a class="button"
+           href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Evolution_of_HTTP"
+           target="_blank">
+            Read About HTTP Evolution
+        </a>
+
+        <a class="button"
+           href="https://home.cern/science/computing/the-birth-of-the-web/"
+           target="_blank">
+            Explore the Birth of the Web
+        </a>
+    </section>
 
 </main>
 
 <footer>
-    <p>HTTP History Class Project</p>
+    <p>HTTP History Project | 2026</p>
 </footer>
 
 </body>
