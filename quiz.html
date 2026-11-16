@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTTP Knowledge Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<header>
+    <h1>Test Your HTTP Knowledge</h1>
+    <p>Complete the quiz to see what you learned</p>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="history.html">History</a>
+        <a href="concepts.html">Key Concepts</a>
+        <a href="requests.html">Requests & Responses</a>
+        <a href="everyday.html">Everyday Use</a>
+        <a href="references.html">References</a>
+        <a href="quiz.html">Quiz</a>
+    </nav>
+</header>
+
+<main>
+
+    <section class="card">
+        <h2>Quiz Instructions</h2>
+
+        <p>
+            Answer all 10 questions about HTTP. You have 10 minutes
+            to complete the quiz. When you submit your answers,
+            your score and results will appear below.
+        </p>
+
+        <div class="timer-box">
+            Time Remaining:
+            <span id="timer">10:00</span>
+        </div>
+    </section>
+
+    <form id="quizForm">
+
+        <section class="card question">
+            <h3>Question 1: Fill in the Blank</h3>
+
+            <p>
+                HTTP stands for
+                <input type="text" id="q1" class="blank"
+                       placeholder="Your answer">
+                Transfer Protocol.
+            </p>
+        </section>
+
+        <section class="card question">
+            <h3>Question 2: Fill in the Blank</h3>
+
+            <p>
+                The computer that receives and responds to a
+                browser's request is called a
+                <input type="text" id="q2" class="blank"
+                       placeholder="Your answer">.
+            </p>
+        </section>
+
+        <section class="card question">
+            <h3>Question 3: Multiple Choice</h3>
+
+            <p>What is the main purpose of HTTP?</p>
+
+            <label>
+                <input type="radio" name="q3" value="A">
+                To allow browsers and servers to communicate
+            </label>
+
+            <label>
+                <input type="radio" name="q3" value="B">
+                To create computer hardware
+            </label>
+
+            <label>
+                <input type="radio" name="q3" value="C">
+                To design images
+            </label>
+
+            <label>
+                <input type="radio" name="q3" value="D">
+                To replace the internet
+            </label>
+        </section>
+
+        <section class="card question">
+            <h3>Question 4: Multiple Choice</h3>
+
+            <p>Which HTTP method retrieves information from a server?</p>
+
+            <label>
+                <input type="radio" name="q4" value="A">
+                POST
+            </label>
+
+            <label>
+                <input type="radio" name="q4" value="B">
+                DELETE
+            </label>
+
+            <label>
+                <input type="radio" name="q4" value="C">
+                GET
+            </label>
+
+            <label>
+                <input type="radio" name="q4" value="D">
+                PATCH
+            </label>
+        </section>
+
+        <section class="card question">
+            <h3>Question 5: Multiple Choice</h3>
+
+            <p>What major feature did HTTP/2 introduce?</p>
+
+            <label>
+                <input type="radio" name="q5" value="A">
+                Multiplexing
+            </label>
+
+            <label>
+                <input type="radio" name="q5" value="B">
+                The first web browser
+            </label>
+
+            <label>
+                <input type="radio" name="q5" value="C">
+                The first website
+            </label>
+
+            <label>
+                <input type="radio" name="q5" value="D">
+                The DELETE method
+            </label>
+        </section>
+
+        <section class="card question">
+            <h3>Question 6: Select All That Apply</h3>
+
+            <p>
+                Which of the following are HTTP methods?
+                Select every correct answer.
+            </p>
+
+            <label>
+                <input type="checkbox" name="q6" value="GET">
+                GET
+            </label>
+
+            <label>
+                <input type="checkbox" name="q6" value="POST">
+                POST
+            </label>
+
+            <label>
+                <input type="checkbox" name="q6" value="DELETE">
+                DELETE
+            </label>
+
+            <label>
+                <input type="checkbox" name="q6" value="HTML">
+                HTML
+            </label>
+        </section>
+
+        <section class="card question">
+            <h3>Question 7: True or False</h3>
+
+            <p>
+                HTTP/3 uses a transport protocol called QUIC.
+            </p>
+
+            <label>
+                <input type="radio" name="q7" value="true">
+                True
+            </label>
+
+            <label>
+                <input type="radio" name="q7" value="false">
+                False
+            </label>
+        </section>
+
+        <section class="card question">
+            <h3>Question 8: Short Answer</h3>
+
+            <p>
+                What three-digit status code means that a requested
+                webpage or resource was not found?
+            </p>
+
+            <input type="text" id="q8" class="blank"
+                   placeholder="Enter the code">
+        </section>
+
+        <section class="card question">
+            <h3>Question 9: True or False</h3>
+
+            <p>
+                HTTP/0.9 supported the same headers and status codes
+                as modern HTTP.
+            </p>
+
+            <label>
+                <input type="radio" name="q9" value="true">
+                True
+            </label>
+
+            <label>
+                <input type="radio" name="q9" value="false">
+                False
+            </label>
+        </section>
+
+        <section class="card question">
+            <h3>Question 10: Multiple Choice</h3>
+
+            <p>
+                What happens after a server processes an HTTP request?
+            </p>
+
+            <label>
+                <input type="radio" name="q10" value="A">
+                It sends an HTTP response
+            </label>
+
+            <label>
+                <input type="radio" name="q10" value="B">
+                It deletes the browser
+            </label>
+
+            <label>
+                <input type="radio" name="q10" value="C">
+                It turns off the internet
+            </label>
+
+            <label>
+                <input type="radio" name="q10" value="D">
+                It automatically closes the website
+            </label>
+        </section>
+
+        <div class="quiz-buttons">
+            <button type="submit" id="submitButton">
+                Submit Quiz
+            </button>
+
+            <button type="reset" id="resetButton">
+                Retake Quiz
+            </button>
+        </div>
+
+    </form>
+
+    <section id="results" class="card" hidden>
+        <h2>Your Quiz Results</h2>
+        <div id="score"></div>
+        <div id="passFail"></div>
+        <div id="timeSpent"></div>
+        <div id="answerResults"></div>
+    </section>
+
+</main>
+
+<footer>
+    <p>HTTP History Project | 2026</p>
+</footer>
+
+</body>
+</html>
