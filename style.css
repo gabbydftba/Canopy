@@ -21,41 +21,65 @@ h1, h2, h3, h4 {
 /* Header */
 
 header {
-    background-color: #e4d5f2;
-    color: #17131c;
+    background: #e4d5f2;
+    padding: 22px 5%;
     text-align: center;
-    padding: 35px 15px;
+    border-bottom: 1px solid #d5c1e8;
 }
 
 header h1 {
-    margin-bottom: 10px;
-    font-size: 2.2rem;
+    color: #4b286d;
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0 0 5px;
 }
 
 header p {
-    margin-top: 0;
-    color: #30263a;
+    color: #51445d;
+    font-size: 0.95rem;
+    margin: 0 0 18px;
 }
 
-/* Navigation */
-
 nav {
-    margin-top: 22px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 9px;
 }
 
 nav a {
-    display: inline-block;
     color: #4b286d;
+    background: #fff;
     text-decoration: none;
-    margin: 6px 10px;
-    font-weight: bold;
+    font-size: 0.9rem;
+    padding: 8px 15px;
+    border: 1px solid #cbb5df;
+    border-radius: 20px;
+    transition: background 0.2s ease;
 }
 
 nav a:hover {
-    color: #8054a3;
-    text-decoration: underline;
+    background: #eee4f7;
 }
 
+@media (max-width: 600px) {
+    header {
+        padding: 18px 4%;
+    }
+
+    header h1 {
+        font-size: 1.65rem;
+    }
+
+    nav {
+        gap: 7px;
+    }
+
+    nav a {
+        font-size: 0.82rem;
+        padding: 7px 11px;
+    }
+}
 /* Main content */
 
 main {
